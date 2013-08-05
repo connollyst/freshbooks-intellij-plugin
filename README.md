@@ -1,0 +1,1 @@
+#FreshBooks Plugin for IntelliJ IDEA
