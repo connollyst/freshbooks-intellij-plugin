@@ -1,42 +1,38 @@
 <idea-plugin version="2">
-  <id>com.yourcompany.unique.plugin.id</id>
-  <name>Plugin display name here</name>
-  <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <id>com.seaniscool.FreshBooksPluginComponent</id>
+    <name>FreshBooks Plugin</name>
+    <version>0.1</version>
+    <vendor email="connolly.st@gmail.com" url="http://www.seaniscool.com">
+        Sean Is Cool
+    </vendor>
 
-  <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <small>most HTML tags may be used</small>
-      ]]></description>
+    <description>
+        A plugin for tracking time in FreshBooks directly from IntelliJ IDEA.
+    </description>
 
-  <change-notes><![CDATA[
-      Add change notes here.<br>
-      <small>most HTML tags may be used</small>
-      ]]>
-  </change-notes>
+    <change-notes>
+    </change-notes>
 
-  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
-  <idea-version since-build="107.105"/>
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="107.105"/>
 
-  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
 
-  <application-components>
-    <!-- Add your application components here -->
-  </application-components>
+    <application-components>
+        <component>
+            <implementation-class>
+                com.seaniscool.FreshBooksPluginComponent
+            </implementation-class>
+        </component>
+    </application-components>
 
-  <project-components>
-    <!-- Add your project components here -->
-  </project-components>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="FreshBooks" icon="/freshbooks.png" anchor="right"
+                    factoryClass="com.seaniscool.FreshBooksToolWindowFactory"/>
+    </extensions>
 
-  <actions>
-    <!-- Add your actions here -->
-  </actions>
-
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-  </extensions>
 </idea-plugin>
