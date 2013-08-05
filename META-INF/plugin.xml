@@ -1,5 +1,5 @@
 <idea-plugin version="2">
-    <id>com.seaniscool.freshbooks.FreshBooksPluginComponent</id>
+    <id>com.seaniscool.freshbooks.FreshBooksPlugin</id>
     <name>FreshBooks Plugin</name>
     <version>0.1</version>
     <vendor email="connolly.st@gmail.com" url="http://www.seaniscool.com">
