@@ -1,5 +1,5 @@
 <idea-plugin version="2">
-    <id>com.seaniscool.FreshBooksPluginComponent</id>
+    <id>com.seaniscool.freshbooks.FreshBooksPluginComponent</id>
     <name>FreshBooks Plugin</name>
     <version>0.1</version>
     <vendor email="connolly.st@gmail.com" url="http://www.seaniscool.com">
@@ -25,14 +25,15 @@
     <application-components>
         <component>
             <implementation-class>
-                com.seaniscool.FreshBooksPluginComponent
+                com.seaniscool.freshbooks.FreshBooksPluginComponent
             </implementation-class>
         </component>
     </application-components>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="FreshBooks" icon="/freshbooks.png" anchor="right"
-                    factoryClass="com.seaniscool.FreshBooksToolWindowFactory"/>
+        <toolWindow id="FreshBooks" anchor="right"
+                    icon="/com/seaniscool/freshbooks/icon.png"
+                    factoryClass="com.seaniscool.freshbooks.FreshBooksToolWindowFactory"/>
     </extensions>
 
 </idea-plugin>

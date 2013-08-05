@@ -1,4 +1,4 @@
-package com.seaniscool;
+package com.seaniscool.freshbooks;
 
 import org.jetbrains.annotations.NotNull;
 

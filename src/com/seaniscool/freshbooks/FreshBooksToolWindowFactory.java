@@ -1,4 +1,8 @@
-package com.seaniscool;
+package com.seaniscool.freshbooks;
+
+import java.awt.*;
+
+import javax.swing.*;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindow;
@@ -11,7 +15,8 @@ public class FreshBooksToolWindowFactory implements ToolWindowFactory {
 
 	@Override
 	public void createToolWindowContent(Project project, ToolWindow toolWindow) {
-        System.out.println("Creating a tool window!");
+		Component component = toolWindow.getComponent();
+		component.getParent().add(new JLabel("Hello, World!"));
 	}
 
 }
