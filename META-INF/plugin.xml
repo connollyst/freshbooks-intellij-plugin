@@ -22,14 +22,6 @@
     <depends>com.intellij.modules.lang</depends>
     -->
 
-    <application-components>
-        <component>
-            <implementation-class>
-                com.seaniscool.freshbooks.FreshBooksPluginComponent
-            </implementation-class>
-        </component>
-    </application-components>
-
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="FreshBooks" anchor="right"
                     icon="/com/seaniscool/freshbooks/icon.png"
